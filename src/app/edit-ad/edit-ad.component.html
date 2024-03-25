@@ -1,0 +1,12 @@
+<div>
+    <h2>Edit Ad</h2>
+    <form (ngSubmit)="updateAd()">
+      <label>Title:</label>
+      <input type="text" [(ngModel)]="ad.title" name="title" required><br>
+      <label>Description:</label>
+      <textarea [(ngModel)]="ad.description" name="description" required></textarea><br>
+      <!-- Add more fields as needed -->
+      <button type="submit">Update Ad</button>
+    </form>
+  </div>
+  
