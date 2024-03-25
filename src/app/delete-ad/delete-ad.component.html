@@ -1,0 +1,10 @@
+<div>
+    <h2>Delete Ads</h2>
+    <ul>
+      <li *ngFor="let ad of ads">
+        <span>{{ ad.title }}</span>
+        <button (click)="deleteAd(ad.id)">Delete</button>
+      </li>
+    </ul>
+  </div>
+  
