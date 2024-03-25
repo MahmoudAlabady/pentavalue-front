@@ -1,0 +1,14 @@
+<div class="container">
+    <div id="recaptcha-container"></div>
+    <div class="form-group">
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="text" id="phoneNumber" class="form-control" [(ngModel)]="phoneNumber">
+    </div>
+    <button class="btn btn-primary" (click)="signInWithPhoneNumber()">Send Verification Code</button>
+    <div class="form-group">
+      <label for="verificationCode">Verification Code:</label>
+      <input type="text" id="verificationCode" class="form-control" [(ngModel)]="verificationCode">
+    </div>
+    <button class="btn btn-primary" (click)="verifyPhoneNumber()">Verify Code</button>
+  </div>
+  
